@@ -1,0 +1,17 @@
+{
+  "/api/*": "/$1",
+  "/me": "/users/1",
+  "/me/courses": "/courses",
+  "/me/chats": "/chats",
+  "/me/tasks": "/tasks",
+  "/me/chats/:id": "/messages",
+  "/me/payment_methods": "/payment_methods",
+  "/me/transactions": "/transactions",
+  "/courses/:id/sections": "/sections",
+  "/courses/:id/tasks": "/tasks",
+  "/sections/:id/lectures": "/lectures",
+  "/sections/:id/exercises": "/exercises",
+  "/sections/:id/tests": "/tests",
+  "/sections/:id/subtitles": "/lecture_subtitles",
+  "/sections/:id/subtitles-languages": "/subtitles_languages"
+}

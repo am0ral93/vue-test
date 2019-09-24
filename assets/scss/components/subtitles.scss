@@ -1,0 +1,115 @@
+.subtitles {
+  &__title-row {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: flex-end;
+    h1 {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+    span {
+      font-size: 14px;
+      color: rgba($black,0.5);
+      display: block;
+      padding-bottom: 5px;
+    }
+  }
+  &__languages {
+    &-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 17px;
+      h2 {
+        margin: 0;
+        margin-right: 22px;
+      }
+      a {
+        color: #2A2F41;
+      }
+    }
+  }
+  &__languages-list {
+    padding:0;
+    margin:0 -20px 20px;
+    list-style:none;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    li {
+      padding: 0 20px;
+    }
+    .el-button {
+      background: rgba(#909DAE, 0.06);
+      color: $black;
+      padding: 12px 17px;
+      span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .count {
+        color: #909DAE;
+        margin-left: 11px;
+      }
+      &.active {
+        background: $blue;
+        color: $white;
+      }
+    }
+  }
+  &__switch-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    a {
+      display: block;
+      color: rgba(#273142, 0.3);
+      text-decoration: none;
+      &:hover {
+        color: $blueLight;
+      }
+    }
+  }
+  &__section{
+    margin-bottom: 40px;
+    &-title {
+      display: block;
+      margin: 0 0 15px;
+      font-size: 14px;
+    }
+    &-items {
+      padding:0;
+      margin:0;
+      list-style:none;
+      li {
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        padding: 9px 12px 9px 30px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        border-radius: $radius;
+      }
+      .box {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+      }
+      .name {
+        display: block;
+        font-size: 14px;
+        color: $black;
+        margin-right: 40px;
+      }
+      .text {
+        display: block;
+        font-size: 14px;
+        color: rgba(#273142, 0.26)
+      }
+      .el-button{
+        padding: 8px 30px;
+        font-size: 14px;
+      }
+    }
+  }
+}

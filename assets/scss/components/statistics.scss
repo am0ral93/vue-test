@@ -1,0 +1,179 @@
+.statistics {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: $radius;
+  padding: 20px 20px;
+  &__title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    h2 {
+      margin: 0;
+    }
+  }
+  &__seetings-box {
+    padding:0;
+    margin:0 -15px;
+    list-style:none;
+    display: flex;
+    align-items: center;
+    li {
+      display: block;
+      padding: 0 15px;
+    }
+    .el-select {
+      width: 200px;
+    }
+  }
+  .el-carousel {
+    &__container {
+      width: 246px;
+      padding: 0 48px;
+      height: 40px;
+    }
+    &__item,
+    &__mask {
+      left: 48px;
+      right: 48px;
+      width: auto;
+      color: $black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: $white !important;
+      padding: 0 20px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: $radius;
+      span {
+        display: inline-block;
+        color: $black;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 600;
+      }
+    }
+    &__arrow {
+      border-radius: $radius;
+      width: 40px;
+      height: 40px;
+      background: $white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      
+      &--left{
+        left: 0;
+        i:before {
+          content: "\e900";
+        }
+      }
+      &--right {
+        right: 0;
+        i:before {
+          content: "\e901";
+        }
+      }
+      i {
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__info-list {
+    display: flex;
+    padding:0;
+    margin:0 -20px 50px;
+    list-style:none;
+    li {
+      padding: 0 20px;
+    }
+    strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: $black;
+    }
+    span {
+      display: block;
+      font-size: 12px;
+      color: rgba(0,0,0, .5);
+      font-weight: 600;
+    }
+    .rate-box {
+      display: flex;
+      margin-bottom: 8px;
+      align-items: center;
+      strong {
+        margin-bottom: 0;
+      }
+    }
+    .el-rate {
+      display: flex;
+      margin-left: 9px;
+    }
+  }
+  .chart {
+    width: 100%;
+    overflow: auto;
+    &-scroll {
+      min-width: 700px;
+    }
+  }
+  @include breakpoint($tablet) {
+    &__title-row {
+      display: block;
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    &__seetings-box {
+      justify-content: space-between;
+    }
+    &__info-list {
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  };
+  @include breakpoint($mobile) {
+    &__seetings-box {
+      display: block;
+      li {
+        margin-bottom: 15px;
+      }
+      .el-select {
+        width: 100%;
+      }
+    }
+    .el-carousel {
+      &__container {
+        width: 100%;
+      }
+    }
+    &__info-list {
+      display: block;
+      li {
+        display: block;
+        width: 100%;
+      }
+      .el-rate {
+        display: none;
+      }
+    }
+  };
+}

@@ -1,0 +1,38 @@
+{
+  "name": "vue-project",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Egor <iroge-27@yandex.ru>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.6.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "axios": "^0.19.0",
+    "cookie-universal-nuxt": "^2.0.18",
+    "dotenv": "latest",
+    "element-ui": "^2.12.0",
+    "nuxt": "^2.0.0",
+    "nuxt-element-ui": "^1.0.10",
+    "vue-moment": "^4.0.0",
+    "vue-mq": "^1.0.1",
+    "vue-router": "^3.1.3",
+    "vuelidate": "^0.7.4",
+    "vuex-map-fields": "^1.3.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/moment": "^1.3.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}

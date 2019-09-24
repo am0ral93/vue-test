@@ -1,0 +1,226 @@
+.courses {
+  &__head-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 40px;
+    h1 {
+      margin: 0;
+    }
+  }
+  @include breakpoint($tablet) {
+    &__head-row {
+      display: block;
+    }
+  };
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  @include breakpoint($tablet) {
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  @include breakpoint($mobile-small) {
+    flex-wrap:wrap;
+    .el-select {
+      margin-right: 0;
+      order:2;
+      width: 100%;
+    }
+    .el-button {
+      margin-bottom: 20px;
+      order: 1;
+      display: block;
+      width: 100%;
+    }
+  };
+}
+
+.course-item {
+  background:none;
+  border:none;
+  border-radius: 0;
+  margin: 0;
+  max-width: 100%;
+  border-bottom: 1px solid rgba($black, 0.07);
+  padding: 28px 0;
+  .el-rate__icon {
+    margin: 0;
+    display: block;
+    line-height: 1;
+  }
+  .el-card__body {
+    padding: 0;
+    display: flex;
+  }
+  &__preview {
+    margin-right: 23px;
+    display: flex;
+    align-items: center;
+    .img {
+      width: 202px;
+      height: 120px;
+      flex: 0 0 202px;
+      display: flex;
+      align-items: center;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  &__content {
+    flex: 1;
+    padding-right: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__name {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 0 16px;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      &:hover {
+        color: $blueLight;
+      }
+    }
+  }
+  &__info-line {
+    display: flex;
+    align-items: center;
+    flex:1;
+    padding: 0 0 20px;
+    &.last{
+      padding: 0;
+    }
+  }
+  &__inf {
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 0;
+    color: rgba($black, 0.5);
+    
+    i {
+      display: block;
+      padding-right: 8px;
+      color: rgba($black, 0.5);
+    }
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    .title {
+      display: block;
+      font-size: 14px;
+      color:$black;
+      padding-right: 6px;
+      span {
+        color: rgba($black,.5)
+      }
+    }
+  }
+  &__targets {
+    padding:0 30px 0 0;
+    margin:0 -5px;
+    list-style:none;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      color: rgba($black, 0.5);
+      padding: 0 5px;
+      position: relative;
+      font-size: 14px;
+      &:after {
+        content: '';
+        position: absolute;
+        left: auto;
+        right: 0;
+        width: 1px;
+        top: 1px;
+        bottom: 1px;
+        background: rgba($black, 0.5);
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  &__inner {
+    min-height: 100%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+  }
+  &__date {
+    display: block;
+    color: rgba($black, 0.5);
+    font-size: 14px;
+  }
+  &__btn-box {
+    margin-bottom: 20px;
+  }
+  &__progress {
+    padding-top: 20px;
+    .el-progress {
+      margin: 0;
+      height: auto;
+    }
+  }
+  &__percent-title {
+    color: $green;
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  @include breakpoint($large) {
+    &__content {
+      padding-right: 0;
+    }
+    &__inner {
+      width: 100%;
+      padding-top: 20px;
+      justify-content: flex-end;
+    }
+    .el-card__body {
+      flex-wrap: wrap;
+    }
+  }
+  @include breakpoint($tablet) {
+    .el-card__body {
+      display: block;
+    }
+    &__preview {
+      margin-right: 0;
+      justify-content: center;
+      margin-bottom: 20px;
+      display: block;
+      .img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        img {
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    &__content {
+      width: 100%;
+    }
+  };
+}

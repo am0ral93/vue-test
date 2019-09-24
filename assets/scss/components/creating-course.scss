@@ -1,0 +1,143 @@
+.creating-course{
+  p {
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $black2;
+    margin: 0 0 30px;
+    max-width: 620px;
+  }
+  .el-steps {
+    margin: 0 -3px 40px;
+  }
+  .el-step {
+    height: 4px;
+    padding: 0 3px;
+    flex: 1 !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: none !important;
+    &__icon {
+      display: none;
+    }
+    &__main {
+      display: none;
+    }
+    &__line {
+      top:0 !important;
+      height: 4px !important;
+      display: block !important;
+      background-color: #E5ECF0;
+      border-radius: 15px;
+    }
+    &__head {
+      &.is-wait,
+      &.is-process {
+        border-color: transparent;
+      }
+      &.is-success {
+        border-color: #7F8FA4;
+        .el-step__line-inner {
+          width: 100% !important;
+          border-width: 2px !important;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  &__visual-holder {
+    display: flex;
+    align-items: center;
+    // margin-right: -200px;
+    padding: 90px 0;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: hidden;
+    .img {
+      margin-right: 50px;
+    }
+    img {
+      // max-width: 590px;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+    p {
+      max-width: 320px;
+    }
+    &.reverse {
+      .img {
+        margin-right: 0;
+        margin-left: 50px;
+      }
+    }
+    &.full {
+      .img {
+        margin: 0;
+      }
+    }
+    @include breakpoint($tablet) {
+      .img {
+        margin: 0 !important;
+      }
+      p {
+        width: 100%;
+        max-width: 100%;
+      }
+    };
+  }
+  &__form-box {
+    padding: 16px 30px;
+    border-radius: $radius;
+    background: $sidebarColor;
+  }
+}
+.accordion-btns {
+  padding:0;
+  margin:0 0 40px;
+  list-style:none;
+  color: $black;
+  li {
+    margin: 0 0 10px;
+    &:last-child {
+      margin: 0;
+    }
+    .ico {
+      color: $blueLight;
+      border: 1px solid $blueLight;
+      border-radius: 50%;
+      width: 16px;
+      flex: 0 0 16px;
+      height: 16px;
+      margin-right: 17px;
+      display: block;
+      line-height: 1;
+      font-size: 10px;
+      padding: 1px 0 0 0;
+      text-align: center;
+    }
+    .el-button {
+      display: block;
+      width: 100%;
+      position: relative;
+      padding: 14px 40px 14px 20px;
+      color: $black;
+      white-space: normal;
+      text-align: left;
+      span {
+        display: flex;
+        align-items: center;
+      }
+      .arr {
+        position: absolute;
+        left: auto;
+        right: 20px;
+        top:50%;
+        font-size: 12px;
+        line-height: 1;
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+}
+

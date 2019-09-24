@@ -1,0 +1,72 @@
+.sub-sidebar {
+  box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.05);
+  background: $white;
+  width: 300px;
+  flex: 0 0 300px;
+  min-height: 100%;
+  padding: 24px 28px;
+  &.no-border {
+    box-shadow: none;
+  }
+  .course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    .text {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: 1;
+      color: rgba(0,0,0, .5);
+      i {
+        margin-right: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+  .post-box {
+    margin-top: 36px;
+  }
+  @include breakpoint($large) {
+    width: 100%;
+    box-shadow: none;
+  }
+  @include breakpoint($mobile) {
+    padding: 15px 15px;
+  };
+}
+
+.sidebar-menu.sub {
+  a{
+    &.nuxt-link-active {
+      background: $silver;
+    }
+    &.done {
+      color: $black2;
+      padding-right: 35px;
+      &:hover {
+        background:none;
+      }
+      &:after{
+        position: absolute;
+        left: auto;
+        right: 15px;
+        top:50%;
+        transform: translateY(-50%);
+        content: "\e913";
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+  }
+}

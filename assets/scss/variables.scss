@@ -1,0 +1,44 @@
+$blue: #2737A0;
+$blueLight: #3B95FF;
+$blueDark: #273142;
+$black: #000000;
+$white: #FFFFFF;
+$gray: #737C87;
+$silver: #F5F7FC;
+$yellow: #FF9B22;
+$grayLight: #E5E5E5;
+$grayDark: #667080;
+$light: #EBEFF2;
+$sidebarColor: #F6F8FA;
+$gray2: #8D97A6;
+$silver2: #F2F4F7;
+$silver3: #EBEEF5;
+$green: #509778;
+$greenLight: #18AB1A;
+
+$black2: #808080;
+$silverLight: #E5ECF0;
+
+$radius: 4px;
+
+
+$mobile-small: 480px;
+$mobile: 768px; 
+$tablet: 992px; 
+$large: 1200px;
+$retina: 1.5;
+$retina-hd: 2.5;
+
+// breakpoints mixin
+@mixin breakpoint($rule){
+  @if ($rule == $retina or $rule == $retina-hd){
+    @media only screen and ( min-resolution : #{$retina*96} ), ( -webkit-min-device-pixel-ratio : #{$retina} ){
+     @content;
+    }
+  }
+  @else{
+    @media only screen and (max-width: #{$rule}){
+     @content;
+    }  
+  }
+}

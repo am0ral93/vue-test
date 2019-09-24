@@ -1,0 +1,22 @@
+.el-progress {
+  margin-bottom: 20px;
+  .el-progress-bar {
+    padding: 0;
+    margin: 0;
+  }
+  .el-progress-bar__outer {
+    height: 14px !important;
+    background: $silver;
+  }
+  .el-progress-bar__inner {
+    background: $blue;
+  }
+  .el-progress__text {
+    display: none;
+  }
+  &.is-success  {
+    .el-progress-bar__inner {
+      background: $green;
+    }
+  }
+}

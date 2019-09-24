@@ -1,0 +1,579 @@
+{
+  "messages": [
+    {
+      "message": "test 1",
+      "mine": true,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 2",
+      "mine": false,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 3",
+      "mine": true,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 4",
+      "mine": false,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 5",
+      "mine": true,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 6",
+      "mine": true,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 7",
+      "mine": false,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 8",
+      "mine": true,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 9",
+      "mine": false,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    },
+    {
+      "message": "test 10",
+      "mine": true,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png"
+      }
+    }
+  ],
+  "chats": [
+    {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "thumb": "/courses/thumbs/course1.png",
+        "fullName": "John Purcell",
+        "lastMessage": "Some message 1"
+      },
+
+      "new_messages_count": 1
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 2,
+        "thumb": "/courses/thumbs/course1.png",
+        "fullName": "John Purcell 2",
+        "lastMessage": "Some message 2"
+      },
+      "new_messages_count": 2
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 3,
+        "thumb": "/courses/thumbs/course1.png",
+        "fullName": "John Purcell 3",
+        "lastMessage": "Some message 3"
+      },
+      "new_messages_count": 3
+    },
+    {
+      "id": 4,
+      "user": {
+        "thumb": "/courses/thumbs/course1.png",
+        "id": 4,
+        "fullName": "John Purcell 4",
+        "lastMessage": "Some message 4"
+      },
+      "new_messages_count": 4
+    },
+    {
+      "id": 5,
+      "user": {
+        "thumb": "/courses/thumbs/course1.png",
+        "id": 5,
+        "fullName": "John Purcell 5",
+        "lastMessage": "Some message 5"
+      },
+      "new_messages_count": 1
+    },
+    {
+      "id": 6,
+      "user": {
+        "thumb": "/courses/thumbs/course1.png",
+        "id": 5,
+        "fullName": "John Purcell 5",
+        "lastMessage": "Some message 5"
+      },
+      "new_messages_count": 1
+    },
+    {
+      "id": 7,
+      "user": {
+        "thumb": "/courses/thumbs/course1.png",
+        "id": 5,
+        "fullName": "John Purcell 5",
+        "lastMessage": "Some message 5"
+      },
+      "new_messages_count": 1
+    },
+    {
+      "id": 8,
+      "user": {
+        "thumb": "/courses/thumbs/course1.png",
+        "id": 5,
+        "fullName": "John Purcell 5",
+        "lastMessage": "Some message 5"
+      },
+      "new_messages_count": 1
+    },
+    {
+      "id": 9,
+      "user": {
+        "thumb": "/courses/thumbs/course1.png",
+        "id": 5,
+        "fullName": "John Purcell 5",
+        "lastMessage": "Some message 5"
+      },
+      "new_messages_count": 1
+    },
+    {
+      "id": 10,
+      "user": {
+        "thumb": "/courses/thumbs/course1.png",
+        "id": 5,
+        "fullName": "John Purcell 5",
+        "lastMessage": "Some message 5"
+      },
+      "new_messages_count": 1
+    }
+  ],
+  "subtitles_languages": [
+    {
+      "id": 1,
+      "name": "Русский"
+    },
+    {
+      "id": 2,
+      "name": "Английский"
+    }
+  ],
+  "lecture_subtitles": [
+    {
+      "id": 1,
+      "name": "Раздел 1 Введение",
+      "lectures": [
+        {
+          "id": 1,
+          "name": "Лекция 1: Введение",
+          "exists": true
+        },
+        {
+          "id": 2,
+          "name": "Лекция 2: Введение",
+          "exists": false
+        },
+        {
+          "id": 3,
+          "name": "Лекция 3: Введение",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Раздел 2 Введение",
+      "lections": [
+        {
+          "id": 1,
+          "name": "Лекция 2.1: Введение"
+        },
+        {
+          "id": 2,
+          "name": "Лекция 2.2: Введение"
+        },
+        {
+          "id": 3,
+          "name": "Лекция 2.3: Введение"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "name": "Введение",
+      "description": "Короткое описание для Введения"
+    },
+
+    {
+      "id": 2,
+      "name": "Введение 2",
+      "description": "Короткое описание для Введения 2"
+    },
+
+    {
+      "id": 3,
+      "name": "Введение 3",
+      "description": "Короткое описание для Введения 3"
+    }
+  ],
+  "lectures": [
+    {
+      "id": 1,
+      "name": "Лекция 1",
+      "description": "Описание",
+      "activeTab": "files"
+    },
+    {
+      "id": 2,
+      "name": "Лекция 2",
+      "description": "Описание",
+      "activeTab": "files"
+    },
+    {
+      "id": 3,
+      "name": "Лекция 3",
+      "description": "Описание",
+      "activeTab": "files"
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Упражнение 1",
+      "description": "Описание"
+    },
+    {
+      "id": 2,
+      "name": "Упражнение 2",
+      "description": "Описание"
+    },
+    {
+      "id": 3,
+      "name": "Упражнение 3",
+      "description": "Описание"
+    }
+  ],
+  "tests": [
+    {
+      "id": 1,
+      "name": "Тест1",
+      "description": "Описание",
+      "quastions": [
+        {
+          "id": 1,
+          "name": "Какой оператор из этих выполняет не только математические операции?"
+        },
+        {
+          "id": 2,
+          "name": "Сколько параметров можно передать функции?"
+        },
+        {
+          "id": 3,
+          "name": "Какой результат будет у выражения ниже?"
+        },
+        {
+          "id": 4,
+          "name": "Какие варианты вызова try..catch являются синтаксически верными в JavaScript?"
+        },
+        {
+          "id": 5,
+          "name": "Сколько параметров можно передать функции?"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Задание 1",
+      "user": {
+        "id": 1,
+        "name": "Мария Смирнова"
+      },
+      "img": "../assets/images/face1.png",
+      "files": [
+        {
+          "ico": "../assets/images/doc_ico.svg",
+          "name": "File_history_essay_11928_v1.doc",
+          "size": "763 Kb",
+          "date": "Mar 17, 2018, 4:14 PM",
+          "rate": 2,
+          "new": false
+        },
+        {
+          "ico": "",
+          "name": "File_history_essay_11928_v1.doc",
+          "size": "763 Kb",
+          "date": "Mar 17, 2018, 4:14 PM",
+          "rate": 0,
+          "new": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Задание 2",
+      "user": {
+        "id": 1,
+        "name": "Мария Смирнова"
+      },
+      "img": "../assets/images/face1.png",
+      "files": [
+        {
+          "ico": "../assets/images/doc_ico.svg",
+          "name": "File_history_essay_11928_v1.doc",
+          "size": "763 Kb",
+          "date": "Mar 17, 2018, 4:14 PM",
+          "rate": 2,
+          "new": false
+        },
+        {
+          "ico": "",
+          "name": "File_history_essay_11928_v1.doc",
+          "size": "763 Kb",
+          "date": "Mar 17, 2018, 4:14 PM",
+          "rate": 0,
+          "new": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Задание 3",
+      "user": {
+        "id": 1,
+        "name": "Мария Смирнова"
+      },
+      "img": "../assets/images/face1.png",
+      "files": [
+        {
+          "ico": "../assets/images/doc_ico.svg",
+          "name": "File_history_essay_11928_v1.doc",
+          "size": "763 Kb",
+          "date": "Mar 17, 2018, 4:14 PM",
+          "rate": 2,
+          "new": false
+        },
+        {
+          "ico": "",
+          "name": "File_history_essay_11928_v1.doc",
+          "size": "763 Kb",
+          "date": "Mar 17, 2018, 4:14 PM",
+          "rate": 0,
+          "new": false
+        }
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Перевод на Paypal shfshdj@gmail.com",
+      "amount": -100,
+      "date": "2016-08-04 15:59:21",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": 2,
+      "description": "Перевод на Mastercard **1817",
+      "amount": -120,
+      "date": "2016-01-04 15:59:21",
+      "status": "DECLINED"
+    },
+    {
+      "id": 3,
+      "description": "Перевод на Paypal shfshdj@gmail.com",
+      "amount": -120,
+      "date": "2016-02-04 15:59:21",
+      "status": "DECLINED"
+    },
+    {
+      "id": 4,
+      "description": "Перевод на Mastercard **1817",
+      "amount": -120,
+      "date": "2016-05-04 15:59:21",
+      "status": "IN_PROGRESS"
+    }
+  ],
+  "payment_methods": [
+    {
+      "id": 1,
+      "code": "PAYPAL",
+      "name": "PayPal",
+      "icon": "paayoneer.svg",
+      "connected": true,
+      "email": "test@gmail.com"
+    },
+    {
+      "id": 2,
+      "code": "PAYONEER",
+      "name": "Payoneer",
+      "icon": "payPal.svg",
+      "connected": false,
+      "email": ""
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Программирование"
+    },
+    {
+      "id": 2,
+      "name": "SEO"
+    },
+    {
+      "id": 3,
+      "name": "Дизайн"
+    },
+    {
+      "id": 4,
+      "name": "Тексты"
+    },
+    {
+      "id": 5,
+      "name": "Аудио"
+    },
+    {
+      "id": 6,
+      "name": "Видео"
+    },
+    {
+      "id": 7,
+      "name": "Маркетинг"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Анна",
+      "last_name": "Ивановна"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "slug": "course-1-slug",
+      "name": "Создание HTML5 игр на JavaScript и Canvas",
+      "education_targets": [
+        "Javascript",
+        "Canvas"
+      ],
+      "requirements": [
+        "Начальный"
+      ],
+      "target_audiences": [
+        "Студенты"
+      ],
+      "rating": 4.9,
+      "reviews_count": 768,
+      "lectures_count": 5,
+      "duration": 16,
+      "published_date": "2016-05-04 15:59:21",
+      "fill_percent": 100,
+      "thumb": "/courses/thumbs/course1.png"
+    },
+    {
+      "id": 2,
+      "slug": "course-2-slug",
+      "name": "Углубленное создание HTML5 игр на JavaScript и Canvas",
+      "education_targets": [
+        "Javascript",
+        "Canvas"
+      ],
+      "requirements": [
+        "Продвинутый"
+      ],
+      "target_audiences": [
+        "Программисты JavaScript"
+      ],
+      "rating": 4.9,
+      "reviews_count": 0,
+      "lection_count": 4,
+      "duration": 16,
+      "fill_percent": 20,
+      "published_date": "2016-05-04 15:59:21",
+      "thumb": "/courses/thumbs/course2.jpg"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "type": "REGISTER",
+      "order": 1,
+      "extra_text_input": false,
+      "title": "Станьте преподавателем уже сегодня",
+      "short_description": "Есть ли у Вас опыт обучения?",
+      "options": [
+        "Опция 1",
+        "Опция 2",
+        "Опция 3",
+        "Опция 4"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "REGISTER",
+      "order": 2,
+      "extra_text_input": false,
+      "title": "Умеете ли вы работать с видеозаписями?",
+      "short_description": "",
+      "options": [
+        "Опция 1",
+        "Опция 2",
+        "Опция 3",
+        "Опция 4"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "REGISTER",
+      "order": 3,
+      "extra_text_input": true,
+      "title": "Есть ли у Вас своя аудитория?",
+      "short_description": "",
+      "options": [
+        "Нет",
+        "Да"
+      ]
+    }
+  ]
+}

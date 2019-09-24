@@ -1,0 +1,27 @@
+@import "./variables.scss"; // variables
+@import "../fonts/fonts.scss"; // fonts
+@import "../fonts/icomoon/style.css"; // icomoon
+@import "./main.scss"; // main styles
+@import "./components/buttons.scss"; // buttons
+@import '../../node_modules/element-ui/lib/theme-chalk/display.css';
+
+
+// components
+@import "./components/sidebar.scss";
+@import "./components/header.scss";
+@import "./components/sub-sidebar.scss";
+@import "./components/progressbar.scss";
+@import "./components/creating-course.scss";
+@import "./components/uploader.scss";
+@import "./components/forms.scss";
+@import "./components/collapse.scss";
+@import "./components/tabs.scss";
+@import "./components/balance.scss";
+@import "./components/courses.scss";
+@import "./components/modals.scss";
+@import "./components/tasks.scss";
+@import "./components/chat.scss";
+@import "./components/community.scss";
+@import "./components/statistics.scss";
+@import "./components/structure.scss";
+@import "./components/subtitles.scss";

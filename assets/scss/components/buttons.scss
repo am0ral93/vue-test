@@ -1,0 +1,133 @@
+.el-button{
+	display:inline-block;
+	vertical-align:top;
+	text-decoration:none;
+	padding:12px 40px;
+	cursor:pointer;
+	appearance:none;
+  transition:all ease .35s;
+  width: auto;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: $radius;
+  color: $black;
+  &.btn-back {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    padding: 9px 18px 9px 12px;
+    align-items: center;
+    background: $silver;
+    color: $gray;
+    border:none;
+    margin-bottom: 28px;
+    &:after {
+      display: none;
+    }
+    &:hover {
+      color: $blue;
+      i {
+        color: $blue;
+      }
+    }
+    i {
+      margin-right: 3px;
+    }
+  }
+  &--primary {
+    background: $blue;
+    border:none;
+    color: $white;
+  }
+  &--primary-light {
+    background: $blueLight;
+    border:none;
+    color: $white;
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+  &--ico {
+    background:none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+  }
+  &--ico2 {
+    background:none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    border:none;
+    color: $grayDark;
+  }
+  &--ico-text {
+    background:none;
+    padding: 8px 19px;
+    i {
+      font-weight: bold;
+      font-size: 12px;
+      margin-right: 11px;
+    }
+  }
+  &__toogle-button {
+    white-space: normal;
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 20px 10px;
+    border-radius: $radius;
+    display: block;
+    width: 100%;
+    &.active {
+      border-color: $blue;
+      color: $blue;
+      background:none;
+    }
+  }
+  &__full {
+    width: 100%;
+  }
+  &--small {
+    padding: 10px 30px;
+  }
+  &--success {
+    border-color: $green;
+    background: $green;
+    color: $white;
+    padding: 12px 30px;
+    span {
+      display: flex;
+      align-items: center;
+    }
+    i {
+      color: $white;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      margin-left: 5px;
+    }
+  }
+  &.left{
+    text-align: left;
+  }
+  &--transparent {
+    background:none;
+  }
+  &--success {
+    background: $greenLight;
+  }
+}
+.el-button--text {
+  color: $blue;
+  border:none;
+  margin: 0;
+  padding: 0;
+}

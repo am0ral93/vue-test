@@ -1,0 +1,226 @@
+.el-collapse {
+  border:none;
+  margin: 0 0 40px;
+  border-radius: $radius;
+  overflow: hidden;
+  background:none;
+  &.include {
+    margin: 0 0 20px;
+    .el-collapse-item {
+      margin-bottom: 10px;
+    }
+    .el-collapse-item__header {
+      background: $white;
+      padding: 9px 10px;
+    }
+    .el-collapse-item__content {
+      background: $white;
+      padding-bottom: 24px;
+      border-radius: $radius;
+    }
+    .el-tabs__content {
+      padding-bottom: 00px;
+    }
+  }
+}
+
+.el-collapse-item {
+  margin: 0 0 5px;
+  background: $sidebarColor;
+  &__header {
+    height: auto;
+    line-height: 1;
+    border:none;
+    justify-content: space-between;
+    padding: 9px 18px;
+    background: #F0F2F5;
+    &-inner {
+      flex: 0 0 auto;
+    }
+  }
+  &__arrow {
+    display: none;
+  }
+  &__header-info {
+    display: flex;
+    align-items: center;
+    .name {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      margin-right: 18px;
+      i {
+        margin-right: 13px;
+        color: #B8BFCC;
+      }
+    }
+    .description {
+      color: $black;
+      font-size: 14px;
+    }
+  }
+  &__wrap {
+    background:none;
+    padding: 0;
+  }
+  &__content {
+    padding: 12px 20px;
+  }
+  &__buttons-list {
+    padding:0;
+    margin:0 -6px;
+    list-style:none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      display: block;
+      padding: 0 6px;
+    }
+  }
+  &__adding-box {
+    // margin: 0 0 21px;
+    padding: 20px 20px 20px;
+    // border-bottom: 1px solid rgba(0,0,0, .07);
+    border-top: 1px solid rgba(0,0,0, .07);
+  }
+  .arrow {
+    margin-left: 28px;
+    span {
+      display: block;
+      transition: all .35s ease 0s;
+    }
+  }
+  &.is-active {
+    .el-collapse-item__header.is-active {
+      .arrow {
+        span {
+          transform: rotate(180deg)
+        }
+      }
+    }
+  }
+}
+
+.quastions-list {
+  padding:0;
+  margin:0;
+  list-style:none;
+  counter-reset: point;
+  li {
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+  }
+  .quastion-title {
+    display: flex;
+    align-items: center;
+    i {
+      color: #B8BFCC;
+      display: block;
+      margin-right: 11px;
+    }
+    span {
+      font-size: 14px;
+      line-height: 1.4;
+      color: $blueDark;
+      display: flex;
+      align-items: flex-start;
+      &:before {
+        font-size: 14px;
+        line-height: 1.4;
+        color: $blueDark;
+        display: block;
+        margin-right: 5px;
+        content: "" counter(point) ". ";
+        counter-increment: point 1;
+        font-style: normal;
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+}
+
+.test__inner-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  .inner {
+    display: flex;
+    align-items: center;
+  }
+  .title {
+    display: block;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $black;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+  .link-blue {
+    font-size: 14px;
+    i {
+      font-weight: normal;
+    }
+    span {
+      font-weight: normal;
+    }
+  }
+}
+
+.links-justify {
+  display: flex;
+  justify-content: space-between;
+  a {
+    margin: 0 10px 0 0;
+  }
+}
+
+.lecture_file {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  .file-preview {
+    margin-right: 12px;
+    .img {
+      width: 36px;
+      height: 36px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .file-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .title {
+    display: block;
+    color: $blueDark;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    font-weight: 500;
+  }
+  .info {
+    display: block;
+    font-size: 12px;
+    color: #959CA6;
+  }
+}
+.el-input__icon.icon-clock {
+  top: 3px;
+  position: relative;
+  display: block;
+  font-size: 16px;
+}

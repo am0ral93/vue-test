@@ -1,0 +1,254 @@
+.input-row {
+  margin: 0 0 12px;
+  position: relative;
+}
+
+.el-form-item {
+  margin-bottom: 22px;
+  position: relative;
+  &.last-margin {
+    margin-bottom: 30px;
+  }
+  &.no-margin {
+    margin: 0;
+  }
+  &.border-bottom {
+    border-bottom: 1px solid rgba(#000, 0.07);
+  }
+  &__change-button {
+    position: absolute;
+    left: auto;
+    right: 8px;
+    top: auto;
+    bottom: 8px;
+  }
+}
+
+.el-form {
+  &__label {
+    display: block;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: $black;
+    &--big {
+      color: $black;
+      font-weight: bold;
+      font-size: 26px;
+      margin-bottom: 20px;
+      word-break: break-word;
+    }
+  }
+  &__label-text {
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+.el-input {
+  margin: 0;
+  &__inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    height: 48px;
+    background: $white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: $radius;
+    color: $black;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  &.is-disabled {
+    .el-input__inner {
+      background: $white;
+      border-color: rgba(0, 0, 0, 0.1);
+      opacity: 0.5;
+    }
+  }
+  &.style__height {
+    .el-input__inner {
+      height: 40px;
+    }
+  }
+}
+
+.el-textarea {
+  &__inner {
+    min-height: 88px;
+  }
+}
+
+.el-select {
+  width: 100%;
+  display: block;
+  
+  &.style__height {
+    .el-input__inner {
+      height: 40px;
+    }
+  }
+  &.text-select {
+    display: block;
+    width: auto;
+    margin-right: 35px;
+    .el-input {
+      padding-right: 30px;
+    }
+    .el-input__inner {
+      height: auto;
+      border:none;
+      background:none;
+      border-radius: 0;
+      padding: 0;
+      
+      color: $black;
+      font-size: 16px;
+    }
+    .el-input__suffix {
+      top: 50%;
+      transform: translateY(-50%);
+      height: auto;
+      color: $black;
+      i {
+        color: $black;
+      }
+    }
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 300px $white inset !important;
+}
+
+.el-card {
+  background: $white;
+  border: none;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: $radius;
+  margin-bottom: 30px;
+  max-width: 940px;
+  &__body {
+    padding: 30px 30px;
+  }
+}
+
+.desciption-text {
+  display: block;
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $black;
+}
+
+.el-checkbox {
+  line-height: 1;
+  display: block;
+  &__input {
+    &.is-checked + .el-checkbox__label {
+      color: $black;
+    }
+  }
+  &__label {
+    color: $black;
+    font-size: 14px;
+    line-height: 1.2;
+    padding-left: 14px;
+  }
+  &__inner {
+    width: 16px;
+    height: 16px;
+    background: none;
+    border-color: #d0d4d9;
+    border-radius: 2px;
+    &:after {
+      left: 5px;
+      top: 2px;
+    }
+  }
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background: $blue;
+  border-color: $blue;
+}
+
+.style .el-checkbox__input.is-checked .el-checkbox__inner,
+.style .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background: $blueLight;
+  border-color: $blueLight;
+}
+
+.el-radio-group {
+  display: block;
+}
+.el-radio-button {
+  display: block;
+  width: 100%;
+ &__inner {
+   font-size: 16px;
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    padding: 12px 20px;
+    color: $black;
+    i {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #D0D5D9;
+      transition: all .35s ease 0s;
+      position: relative;
+      margin-right: 14px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        letter-spacing: 50%;
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
+        margin-left: -4px;
+        background: $blueLight;
+        transition: all .35s ease 0s;
+        border-radius: 50%;
+        opacity: 0;
+      }
+    }
+    &:hover {
+      color: $black;
+    }
+ }
+ &.is-active {
+  .el-radio-button__inner {
+    background: $white;
+    border-color: rgba(0, 0, 0, 0.1);
+    color: $black;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1) !important;
+    i {
+      border-color: #D0D5D9;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+ }
+}
+
+.check-row {
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  .el-checkbox__label {
+    width: 100%;
+  }
+}
